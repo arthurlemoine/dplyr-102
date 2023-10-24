@@ -21,3 +21,11 @@ accounts <- vroom(here("data", "account.csv"))
 disp <- vroom(here("data", "disp.csv"))
 ```
 
+## Join data tables
+
+### Inner join
+
+```{r}
+da <- inner_join(accounts, disp)
+```
+
