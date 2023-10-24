@@ -1,0 +1,23 @@
+---
+title: "Financial data analysis"
+author: "Arthur Lemoine"
+format: html
+editor: visual
+---
+
+```{r}
+library(here)
+here::i_am("dplyr-102.Rproj")
+library(vroom)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+## Data loading
+```{r}
+clients <- vroom(here("data", "client.csv"))
+accounts <- vroom(here("data", "account.csv"))
+disp <- vroom(here("data", "disp.csv"))
+```
+
